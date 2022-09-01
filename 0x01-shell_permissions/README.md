@@ -45,3 +45,5 @@ file 101-symbolic_link_permissions is a script that changes the owner and the gr
 
 
   * The file _hello is a symbolic link
+
+file 102-if_only is a script that changes the owner of the file hello to betty only if it is owned by the user guillaume.
