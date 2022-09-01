@@ -33,3 +33,5 @@ file 9-John_Doe is a script that sets the  mode of the file hello to this:
 file 10-mirror_permissions is a script that sets the mode of the file hello to hello the same as olleh's mode.
 
 file 11-directories_permissions is a script that adds execute permission to all subdirectories of the current directory for the owner, the group owner and all other users. Regular files should not be changed
+
+file 12-directories_permissions is a script that creates a directory called my_dir with permissions 751 in the working directory.
