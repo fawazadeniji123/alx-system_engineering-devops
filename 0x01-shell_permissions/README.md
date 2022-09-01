@@ -7,3 +7,5 @@ file 2-groups is a script that prints all the groups the current user is part of
 file 3-new_owner is a script that changes the owner of the file hello to the user betty.
 
 file 4-empty is a script that creates an empty file called hello.
+
+file 5-execute is a script that adds execute permission to the owner of the file hello.
