@@ -77,8 +77,7 @@ function submit_tasks() {
 }
 
 if [[ "${#file_names[@]}" == "${#commands[@]}" ]]; then
-  # submit_tasks
-  echo 'is equal'
+  submit_tasks
 else
   echo 'file_name and commands length are not equal'
 fi
