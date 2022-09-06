@@ -53,8 +53,9 @@ function submit_tasks() {
 
     git add .
     git commit -m "finished task ${i}"
-    git push
   done
+  
+  git push
 
 }
 
