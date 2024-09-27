@@ -12,7 +12,7 @@ def number_of_subscribers(subreddit):
 
     # Define custom headers to avoid the Too Many Requests error (including a User-Agent)
     headers = {
-        "User-Agent": "python:subreddit.subscriber.counter:v1.0 (by /u/firdaus_cartoon_jr)"
+        "User-Agent": "python:subreddit.subscriber.counter:v1.0 (by /u/frowningheart)"
     }
 
     try:
