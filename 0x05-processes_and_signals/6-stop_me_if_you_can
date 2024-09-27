@@ -1,4 +1,25 @@
 #!/usr/bin/env bash
-# Kills the 4-to_infinity_and_beyond process.
 
-pkill -f 4-to_infinity_and_beyond 
+# Find the PID of the process named "4-to_infinity_and_beyond"
+process_name="4-to_infinity_and_beyond"
+
+# Get the process ID (PID) of the process
+pid=$(pgrep "$process_name")
+
+# Check if the process is running
+if [ -z "$pid" ]; then
+  echo "Process '$process_name' is not running."
+  exit 1
+fi
+
+# Send a SIGTERM signal to the process by writing to /proc/[pid]/task/[pid]/kill
+echo "Stopping process '$process_name' with PID $pid..."
+echo "15" > "/proc/$pid/task/$pid/kill"
+
+# Check if the process was successfully terminated
+sleep 1
+if pgrep "$process_name" > /dev/null; then
+  echo "Failed to stop the process."
+else
+  echo "Process '$process_name' has been successfully stopped."
+fi
